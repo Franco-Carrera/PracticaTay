@@ -1,0 +1,16 @@
+.section__about {
+  display: flex;
+  padding: 40px;
+  // background-color: #191919;
+  //background-color: red;
+  background-color: $bg-about;
+
+  .about__info {
+    color: $white;
+    margin: 1.5rem;
+
+    p {
+      padding: 10px;
+    }
+  }
+}

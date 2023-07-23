@@ -1,0 +1,41 @@
+%flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/**Songs Section**/
+.section__songs {
+  background-color: rgb(165, 39, 106);
+  //@extend %flexbox;
+  padding: 60px;
+  color: #000;
+
+  h2 {
+    margin: 1rem;
+  }
+
+  .songs__info {
+    //background-color: darkorange;
+    background-color: $bg-songsInfo;
+    color: $white;
+    padding: 1rem;
+    border-radius: 1rem;
+
+    h4,
+    .parrafo__estilo,
+    small {
+      padding: 1rem;
+    }
+  }
+
+  .container__inputs {
+    @extend %flexbox;
+    padding-top: 5rem;
+
+    input {
+      border: none;
+    }
+  }
+}

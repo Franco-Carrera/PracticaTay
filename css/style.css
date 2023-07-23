@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+/**Variables**/
+/**Header Nesting**/
+.section__header {
+  padding: 35px;
+  background-color: #80647d;
+  min-height: 25rem;
+}
+.section__header h1 {
+  color: #f3737b;
+  width: max-content;
+}
+.section__header h1:hover {
+  color: #cf5f75;
+}
+.section__header .contain__image {
+  display: flex;
+  justify-content: right;
+}
+.section__header .contain__image img {
+  width: 40rem;
+  height: auto;
+}
+@media (max-width: 768px) {
+  .section__header {
+    background-color: pink;
+  }
+}
+
+.section__about {
+  display: flex;
+  padding: 40px;
+  background-color: #80647d;
+}
+.section__about .about__info {
+  color: white;
+  margin: 1.5rem;
+}
+.section__about .about__info p {
+  padding: 10px;
+}
+
+.accept, .section__songs .container__inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/**Songs Section**/
+.section__songs {
+  background-color: #a5276a;
+  padding: 60px;
+  color: #000;
+}
+.section__songs h2 {
+  margin: 1rem;
+}
+.section__songs .songs__info {
+  background-color: #aa92a8;
+  color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.section__songs .songs__info h4,
+.section__songs .songs__info .parrafo__estilo,
+.section__songs .songs__info small {
+  padding: 1rem;
+}
+.section__songs .container__inputs {
+  padding-top: 5rem;
+}
+.section__songs .container__inputs input {
+  border: none;
+}
+
+/**Listas**/
+.songs_container {
+  background-color: blue;
+}
+
+/**Extends**/
+.accept, .error {
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.error {
+  background-color: red;
+}
+
+.accept {
+  background-color: green;
+}
+
+/*# sourceMappingURL=style.css.map */

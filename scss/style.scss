@@ -1,0 +1,36 @@
+@import "base/import";
+
+/**Listas**/
+
+$lista: "item-1", "item-2", "item-3";
+
+$colores: red, green, blue;
+
+.songs_container {
+  background-color: nth($colores, 3);
+}
+
+/**Extends**/
+
+%mensaje {
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+// %flexbox {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+.error {
+  @extend %mensaje;
+  background-color: red;
+}
+
+.accept {
+  @extend %flexbox;
+  @extend %mensaje;
+  background-color: green;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Almanaque Taylor</title>
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header class="section__header">
+    <h1>The init of the site</h1>
+
+    <article class="contain__image">
+      <img src="/image/taylorAlbums.jpg" alt="">
+    </article>
+  </header>
+
+  <section class="section__about">
+    <article class="about__info">
+      <ul>
+        <li>Este es un sitio dedicado a canciones de taylor swift en base a tu estado amoroso</p>
+        <li>Se encontrarán respuestas con imagenes que darán un significado al proceso al que te encuentras</p>
+      </ul>
+    </article>
+
+    <article class="about__info">
+      <ul>
+        <li>El resultado final que visualizes será totalmente al azar y a la vez puede llegar a tener un sentido con
+          como
+          te sentís</li>
+      </ul>
+    </article>
+  </section>
+
+  <!-- Se puede agregar frase de taylor del amor incondicional -->
+
+  <section class="section__songs">
+    <h2>My songs</h2>
+
+    <article class="songs__info">
+      <p class="parrafo__estilo">¿Cómo te sientes en el amor?</p>
+
+      <small>Cuando hablamos del amor es en un estado general, lo podes tomar tanto como un noviazgo, sentimiento
+        familiar, o estado de ánimo.</small>
+
+      <h4>Si tu estado actual, es de una emoción contenta, escribí como dato la palabra feliz, si estás de bajo ánimo
+        agrega la palabra triste y si sentís mariposas coloca la palabra amor.</h4>
+    </article>
+
+    <article class="container__inputs">
+
+      <input id="mySong" type="text" placeholder="En el amor me siento ...">
+
+      <div id="emptyMsg">
+
+      </div>
+
+      <button id="buttonSongs">Enviar</button>
+
+    </article>
+
+    <article class="container__response">
+      <p class="dinamic__p">La canción reflejada a tu momento amoroso es ...</p>
+    </article>
+
+    <div id="response__song">
+
+    </div>
+
+  </section>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

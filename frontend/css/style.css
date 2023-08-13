@@ -5,11 +5,26 @@
   font-family: "Quicksand", sans-serif;
 }
 
+body {
+  background-image: linear-gradient(135deg, #060824, #181c46, #2f3780, #161569);
+  background-size: 500%;
+}
+
+@keyframes fanimado {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 /**Variables**/
 /**Header Nesting**/
 .section__header {
   padding: 35px;
-  background-color: #80647d;
   min-height: 25rem;
 }
 .section__header h1 {
@@ -19,11 +34,19 @@
 .section__header h1:hover {
   color: #cf5f75;
 }
-.section__header .contain__image {
+.section__header .section__header__info {
+  display: flex;
+  align-items: center;
+}
+.section__header .section__header__info .header__info {
+  font-style: oblique;
+  color: white;
+}
+.section__header .section__header__info .contain__image {
   display: flex;
   justify-content: right;
 }
-.section__header .contain__image img {
+.section__header .section__header__info .contain__image img {
   width: 40rem;
   height: auto;
 }
@@ -35,8 +58,7 @@
 
 .section__about {
   display: flex;
-  padding: 40px;
-  background-color: #80647d;
+  padding: 25px;
 }
 .section__about .about__info {
   color: white;
@@ -46,38 +68,40 @@
   padding: 10px;
 }
 
-.accept, .section__songs .container__inputs {
+.accept, .section__songs .container__textarea {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
 /**Songs Section**/
 .section__songs {
-  background-color: #a5276a;
   padding: 60px;
-  color: #000;
+  color: white;
 }
 .section__songs h2 {
   margin: 1rem;
+  filter: drop-shadow(10px 10px 15px, #c42121);
 }
 .section__songs .songs__info {
   background-color: #aa92a8;
-  color: white;
   padding: 1rem;
   border-radius: 1rem;
 }
-.section__songs .songs__info h4,
-.section__songs .songs__info .parrafo__estilo,
+.section__songs .songs__info p,
 .section__songs .songs__info small {
   padding: 1rem;
 }
-.section__songs .container__inputs {
+.section__songs .container__textarea {
   padding-top: 5rem;
 }
-.section__songs .container__inputs input {
+.section__songs .container__textarea textarea {
   border: none;
+  resize: none;
+  caret-color: orange;
+}
+.section__songs .container__textarea button {
+  margin: 1rem;
 }
 
 /**Listas**/

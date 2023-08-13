@@ -4,12 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Almanaque Taylor</title>
+  <title>Find your song Taylor</title>
 
   <!-- Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./image/taylorImage1.jpg" type="image/x-icon">
 
 
   <link rel="stylesheet" href="css/style.css">
@@ -18,11 +21,20 @@
 <body>
 
   <header class="section__header">
-    <h1>The init of the site</h1>
+    <h1>Find your song</h1>
 
-    <article class="contain__image">
-      <img src="/image/taylorAlbums.jpg" alt="">
-    </article>
+    <section class="section__header__info">
+      <article class="header__info">
+        <p>Creo que el amor incondicional es como <b>...</b> amas a alguien demasiado que incluso lo seguirías amando
+          aunque no
+          te
+          amara de la misma manera. Creo que eso <b>...</b> es amor incondicional</p>
+      </article>
+
+      <article class="contain__image">
+        <img src="./image/taylorAlbums.jpg" alt="">
+      </article>
+    </section>
   </header>
 
   <section class="section__about">
@@ -42,8 +54,6 @@
     </article>
   </section>
 
-  <!-- Se puede agregar frase de taylor del amor incondicional -->
-
   <section class="section__songs">
     <h2>My songs</h2>
 
@@ -53,16 +63,17 @@
       <small>Cuando hablamos del amor es en un estado general, lo podes tomar tanto como un noviazgo, sentimiento
         familiar, o estado de ánimo.</small>
 
-      <h4>Si tu estado actual, es de una emoción contenta, escribí como dato la palabra feliz, si estás de bajo ánimo
-        agrega la palabra triste y si sentís mariposas coloca la palabra amor.</h4>
+      <p>Si tu estado actual, es de una emoción contenta, escribí como dato la palabra feliz, si estás de bajo ánimo
+        agrega la palabra triste y si sentís mariposas coloca la palabra amor.</p>
     </article>
 
-    <article class="container__inputs">
+    <article class="container__textarea">
 
-      <input id="mySong" type="text" placeholder="En el amor me siento ...">
+      <textarea name="comments" id="mySong" cols="60" rows="10" maxlength="300" placeholder="En el amor me siento ..."
+        required></textarea>
 
       <div id="emptyMsg">
-
+        <!-- cambiar div por aside -->
       </div>
 
       <button id="buttonSongs">Enviar</button>
@@ -71,13 +82,16 @@
 
     <article class="container__response">
       <p class="dinamic__p">La canción reflejada a tu momento amoroso es ...</p>
+
+      <div id="response__song">
+        <!-- cambiar div por aside -->
+      </div>
+
     </article>
 
-    <div id="response__song">
-
-    </div>
-
   </section>
+
+
 
   <script src="index.js"></script>
 </body>

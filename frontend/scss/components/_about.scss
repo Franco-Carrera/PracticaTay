@@ -1,9 +1,10 @@
 .section__about {
   display: flex;
-  padding: 40px;
+  padding: 25px;
   // background-color: #191919;
   //background-color: red;
-  background-color: $bg-about;
+
+  //background-color: $bg-about;
 
   .about__info {
     color: $white;

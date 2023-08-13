@@ -4,7 +4,9 @@
   padding: 35px;
   //background-color: #191919;
   //background-color: $bg-header;
-  background-color: $bg-about;
+
+  //background-color: $bg-about;
+
   min-height: 25rem;
 
   h1 {
@@ -16,13 +18,24 @@
     }
   }
 
-  .contain__image {
+  .section__header__info {
     display: flex;
-    justify-content: right;
+    align-items: center;
 
-    img {
-      width: 40rem;
-      height: auto;
+    .header__info {
+      // font-weight: bold;
+      font-style: oblique;
+      color: $white;
+    }
+
+    .contain__image {
+      display: flex;
+      justify-content: right;
+
+      img {
+        width: 40rem;
+        height: auto;
+      }
     }
   }
 

@@ -1,41 +1,49 @@
 %flexbox {
   display: flex;
-  justify-content: center;
+  // justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
 /**Songs Section**/
 .section__songs {
-  background-color: rgb(165, 39, 106);
-  //@extend %flexbox;
+  //background-color: rgb(165, 39, 106);
+  //background-color: #d84b96;
   padding: 60px;
-  color: #000;
+  color: $white;
+  //color: #000;
 
   h2 {
     margin: 1rem;
+    //color: #000;
+    //color: $white;
+    filter: drop-shadow(10px 10px 15px, #c42121);
   }
 
   .songs__info {
-    //background-color: darkorange;
     background-color: $bg-songsInfo;
-    color: $white;
     padding: 1rem;
     border-radius: 1rem;
 
-    h4,
-    .parrafo__estilo,
+    p,
     small {
       padding: 1rem;
     }
   }
 
-  .container__inputs {
+  .container__textarea {
     @extend %flexbox;
     padding-top: 5rem;
 
-    input {
+    textarea {
       border: none;
+      resize: none;
+      caret-color: orange;
+    }
+
+    button {
+      margin: 1rem;
+      //outline: none;
     }
   }
 }
